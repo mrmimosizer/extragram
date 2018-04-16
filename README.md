@@ -1,24 +1,56 @@
-# README
+# Extragram Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
+* Create Rails project
+```
+rails new extragram --database postgresql --skip-coffee --skip-turbolinks --skip-test --skip-spring
+```
+* Add RSpec, Bootstrap, Guard
+* Install Postgresql, setup database
+```
+https://www.codementor.io/engineerapart/getting-started-with-postgresql-on-mac-osx-are8jcopb
+```
+* Set up Github, Travis, Heroku
+* Deploy to production
+* Dotenv and ENV variables
+* Homework: Setup your own development and production environment; deploy and test installation; add NewRelic in Heroku
 
-Things you may want to cover:
+### Modelling
+* User, Post (one-to-many assoications)
+* Likes (many-to-many associations)
+* Followers (self-referencing assocations)
+* Homework: Add Comment model to Post, remove N+1 queries
 
-* Ruby version
+### File Uploads
+* Heroku Dynos explanation
+* CarrierWave, S3
+* Homework: Setup your own AWS, S3 account; add CarrierWave thumbnails; upload audio media; add a HTML5 audio player
 
-* System dependencies
+### Authentication and Authorisation
+* Controller sessions
+* Rails out-of-the-box authentication
+* current_user
+* Authorisation via Pundit
+* Homework: BP's Authentication & Authorisation activities 
 
-* Configuration
+### AJAX
+* Remote forms
+* Homework: Convert comments form to remote (AJAX)
 
-* Database creation
+### Styling
+* Bootstrap overview
+* Layouts: tables, floats, flex-grid
+* Media queries
 
-* Database initialization
+### Mailer
+* Notification on likes, followings
+* Integration with email service provider
+* Homework: Setup your own email service provider account
 
-* How to run the test suite
+### RSpec
+* Full-stack RSpec testing
+* Homework: Add CarrierWave file upload specs
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Integrating External Services
+* Geocoder
+* Stripe
