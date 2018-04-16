@@ -4,6 +4,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
 
 
+#Get the bootstrap gem for css stylesheets
+gem 'bootstrap', '~> 4.0'
+#get the RSPEC gem for Test Driven Design (TDD)
+gem 'rspec', '~> 3.7'
+#get Guard for protection
+gem 'guard', '~> 2.14', '>= 2.14.2'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
