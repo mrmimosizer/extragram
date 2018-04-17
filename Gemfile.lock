@@ -43,8 +43,12 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (9.0.0)
+<<<<<<< HEAD
     autoprefixer-rails (8.2.0)
       execjs
+=======
+    bcrypt (3.1.11)
+>>>>>>> 8d62e40ab87d78cb1321ab462944699e6654bf6a
     bindex (0.5.0)
     bootsnap (1.3.0)
       msgpack (~> 1.0)
@@ -208,6 +212,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.0)
   byebug
@@ -223,7 +228,6 @@ DEPENDENCIES
   rspec-rails
 >>>>>>> 2785f31221dc6966204bc1290308e6cc2e4d4392
   sass-rails (~> 5.0)
-  tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
 
