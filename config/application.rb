@@ -5,11 +5,7 @@ require "rails"
 require "active_model/railtie"
 require "active_job/railtie"
 require "active_record/railtie"
-<<<<<<< HEAD
-  require "active_storage/engine"
-=======
 # require "active_storage/engine"
->>>>>>> 7033c54197710eb3edcdf41ee7a2ca9275a9bdcb
 require "action_controller/railtie"
 require "action_mailer/railtie"
 require "action_view/railtie"
