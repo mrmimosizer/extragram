@@ -10,21 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 0) do
-=======
-ActiveRecord::Schema.define(version: 2018_04_16_024243) do
->>>>>>> 2785f31221dc6966204bc1290308e6cc2e4d4392
-=======
-ActiveRecord::Schema.define(version: 2018_04_17_011925) do
->>>>>>> 8d62e40ab87d78cb1321ab462944699e6654bf6a
+ActiveRecord::Schema.define(version: 2018_04_18_014549) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-<<<<<<< HEAD
-=======
+  create_table "comments", force: :cascade do |t|
+    t.string "user_comment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "likes", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "post_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["post_id"], name: "index_likes_on_post_id"
+    t.index ["user_id"], name: "index_likes_on_user_id"
+  end
+
   create_table "posts", force: :cascade do |t|
     t.string "description"
     t.datetime "created_at", null: false
@@ -40,5 +45,6 @@ ActiveRecord::Schema.define(version: 2018_04_17_011925) do
     t.datetime "updated_at", null: false
   end
 
->>>>>>> 2785f31221dc6966204bc1290308e6cc2e4d4392
+  add_foreign_key "likes", "posts"
+  add_foreign_key "likes", "users"
 end

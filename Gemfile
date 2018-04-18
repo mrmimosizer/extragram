@@ -3,7 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
-
+#Used to help kill N+1 queries
+gem 'bullet', '~> 5.7', '>= 5.7.5'
 #Get the bootstrap gem for css stylesheets
 gem 'bootstrap', '~> 4.0'
 #get the RSPEC gem for Test Driven Design (TDD)
