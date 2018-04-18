@@ -9,7 +9,11 @@
 if Rails.env.development? then
     User.destroy_all # vs. .delete_all
     user = User.create! \
+<<<<<<< HEAD
         username: 'world_of_engineering', 
+=======
+        username: 'world_of_engineering',
+>>>>>>> 34861d09aeed9f6c4eacc51df8064d10036a3591
         email: 'world_of_engineering@example.com',
         password: 'password',
         password_confirmation: 'password'
